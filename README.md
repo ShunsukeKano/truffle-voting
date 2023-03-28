@@ -63,7 +63,7 @@ The addVoter function is an external function that can only be called by the con
 ### 5. Gas Cost Optimizations
 The contract minimizes gas costs by using efficient data structures (mappings) and avoiding unnecessary loops or complex computations. The contract uses OpenZeppelin's libraries, which have been audited and optimized for gas efficiency.
 
-### 5. Security Considerations
+### 6. Security Considerations
 The contract uses the Ownable pattern from OpenZeppelin to restrict access to sensitive functions, such as adding voters and creating proposals.
 
 The contract uses SafeMath for arithmetic operations to avoid overflows and underflows.
