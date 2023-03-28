@@ -28,7 +28,7 @@ Step 6:
 run node /scripts/votingSystem.js to see the outcome.
 ```
 
-## Introduction of this Project
+## Introduction
 This voting system is a decentralized voting platform based on the Ethereum blockchain, which comes with the Truffle framework and tested on Ganache local network. It allows the creation of proposals and voting on them using ERC20 tokens for authentication.
 
 ## High-Level Design
