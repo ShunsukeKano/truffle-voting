@@ -34,49 +34,36 @@ This voting system is a decentralized voting platform based on the Ethereum bloc
 ## High-Level Design
 The VotingSystem contract consists of the following components:
 
-1. Proposal struct
-2. Proposals array
-3. Voters mapping
-4. VoteSignatures mapping
-5. ERC20 token
-
-### Proposals Array
+### 1. Proposals Array
 The proposals array stores all created proposals. A new proposal is added to the array using the createProposal function.
 
-### Voters Mapping
+### 2. Voters Mapping
 The voters mapping maps an Ethereum address to a boolean value, which represents whether the address has already voted.
 
-### VoteSignatures Mapping
+### 3. VoteSignatures Mapping
 The voteSignatures mapping maps an Ethereum address to a uint256 signature. The signature is used for vote authentication.
 
-### ERC20 Token
+### 4. ERC20 Token
 The contract uses an ERC20 token for voter authentication. The token address is passed to the constructor during deployment.
 
 ## Implementation Details
 
-1. Constructor
-2. createProposal function
-3. vote function
-4. addVoter function
-5. Proposal Struct
-6. Each proposal consists of a description and a vote count
-
-###  Constructor
+###  1. Constructor
 The constructor takes the address of the ERC20 token as an argument and initializes the token variable.
 
-### createProposal Function
+### 2. createProposal Function
 The createProposal function is an external function that can only be called by the contract owner. It takes a string description as an argument and creates a new proposal with the given description and an initial vote count of 0.
 
-### vote Function
+### 3. vote Function
 The vote function is an external function that allows eligible voters to cast their vote. It takes a proposalId and a signature as arguments. The function checks that the voter hasn't already voted, that the proposal ID is valid, and that the provided signature matches the voter's stored signature. If all checks pass, the vote is counted, and the voter's status is updated.
 
-### addVoter Function
+### 4. addVoter Function
 The addVoter function is an external function that can only be called by the contract owner. It takes an Ethereum address and a uint256 signature as arguments. The function checks if the voter is already added, and if not, it adds the voter's signature to the voteSignatures mapping.
 
-### Gas Cost Optimizations
+### 5. Gas Cost Optimizations
 The contract minimizes gas costs by using efficient data structures (mappings) and avoiding unnecessary loops or complex computations. The contract uses OpenZeppelin's libraries, which have been audited and optimized for gas efficiency.
 
-### Security Considerations
+### 5. Security Considerations
 The contract uses the Ownable pattern from OpenZeppelin to restrict access to sensitive functions, such as adding voters and creating proposals.
 
 The contract uses SafeMath for arithmetic operations to avoid overflows and underflows.
