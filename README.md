@@ -32,7 +32,7 @@ run node /scripts/votingSystem.js to see the outcome.
 This voting system is a decentralized voting platform based on the Ethereum blockchain, which comes with the Truffle framework and tested on Ganache local network. It allows the creation of proposals and voting on them using ERC20 tokens for authentication.
 
 ## High-Level Design
-The contract consists of the following components:
+The contract has the following components:
 
 ### 1. Proposals Array
 The proposals array stores all created proposals. A new proposal is added to the array using the createProposal function.
