@@ -4,7 +4,13 @@
 
 ## Getting Started
 
-Step 1:
+Step 1: Run the command to install dependencies
+
+```bash
+npm install
+```
+
+Step 2:
 
 ```bash
 cd /truffle
@@ -16,17 +22,15 @@ and run
 truffle develop
 ```
 
+Step 3: Setup Ganache local network and check truffle-config.js to match with your local environment.
 
-Step 2: Setup Ganache local network and check truffle-config.js to match with your local environment.
-
-Step 3: run
+Step 4: run
 
 ```bash
 migrate --network development
 ```
 
-
-Step 4:
+Step 5:
 
 ```bash
 cd /scripts/votingSystem.js
@@ -34,9 +38,9 @@ cd /scripts/votingSystem.js
 
 and change contractAddress to deployed contract address.
 
-Step 5: Change newVoterAddress in votingSystem.js, if necessary
+Step 6: Change newVoterAddress in votingSystem.js, if necessary
 
-Step 6: run the command to see the outcome.
+Step 7: run the command to see the outcome.
 
 ```bash
 node /scripts/votingSystem.js
