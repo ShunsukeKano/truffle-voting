@@ -57,7 +57,7 @@ async function main() {
   const newVoterSignature = 67890;
   await addVoter(newVoterAddress, newVoterSignature);
 
-   // Add more new voters
+  // Add more new voters
   //  const newVoterAddressTwo = '0x14774B4d71a3A9143A628Ec4c8898c475a2aBFEe';
   //  const newVoterSignatureTwo = 54321;
   //  await addVoter(newVoterAddressTwo, newVoterSignatureTwo);

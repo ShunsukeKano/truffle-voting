@@ -47,7 +47,6 @@ node /scripts/votingSystem.js
 ```
 
 <br />
-<br />
 
 
 ## Introduction
