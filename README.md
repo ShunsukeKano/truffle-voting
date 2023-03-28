@@ -2,6 +2,10 @@
 
 ### Off-chain stream: A voting system using off-chain voting roll call
 
+## Introduction
+
+This voting system is a decentralized voting platform based on the Ethereum blockchain, which comes with the <a href="https://github.com/trufflesuite/truffle" target="_blank">Truffle framework</a> and tested on <a href="https://github.com/trufflesuite/ganache" target="_blank">Ganache</a> local network. It allows the creation of proposals and voting on them using ERC20 tokens for authentication.
+
 ## Getting Started
 
 Step 1: Run the command to install dependencies
@@ -41,11 +45,6 @@ node /scripts/votingSystem.js
 ```
 
 <br />
-
-
-## Introduction
-
-This voting system is a decentralized voting platform based on the Ethereum blockchain, which comes with the <a href="https://github.com/trufflesuite/truffle" target="_blank">Truffle framework</a> and tested on <a href="https://github.com/trufflesuite/ganache" target="_blank">Ganache</a> local network. It allows the creation of proposals and voting on them using ERC20 tokens for authentication.
 
 ## High-Level Design
 
