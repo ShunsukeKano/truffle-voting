@@ -10,13 +10,7 @@ Step 1: Run the command to install dependencies
 npm install
 ```
 
-Step 2:
-
-```bash
-cd /truffle
-```
-
-and run
+Step 2: run
 
 ```bash
 truffle develop
