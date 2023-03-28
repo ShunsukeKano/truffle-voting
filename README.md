@@ -1,13 +1,34 @@
-# Voting System on Blockchain README
-## (A voting system using off-chain voting roll call)
+# Voting System on Blockchain
+### Off-chain stream: A voting system using off-chain voting roll call
 
-1. cd /truffle and run "truffle develop"
-2. Setup Ganache local net work and confirm truffle-config.js
-3. run "migrate --network development"
-4. cd /scripts/votingSystem.js and change contractAddress to deployed contract address
-4. Change newVoterAddress in votingSystem.js, if necessary
-5. run node /scripts/votingSystem.js to see the outcome.
+## Getting Started
 
+Step 1:
+```bash
+cd /truffle and run "truffle develop"
+```
+Step 2:
+```bash
+Setup Ganache local net work and confirm truffle-config.js
+```
+Step 3:
+```bash
+run "migrate --network development"
+```
+Step 4:
+```bash
+cd /scripts/votingSystem.js and change contractAddress to deployed contract address
+```
+Step 5:
+```bash
+Change newVoterAddress in votingSystem.js, if necessary
+```
+Step 6:
+```bash
+run node /scripts/votingSystem.js to see the outcome.
+```
+
+## Introduction of this Project
 This voting system is a decentralized voting platform based on the Ethereum blockchain. It allows the creation of proposals and voting on them using ERC20 tokens for authentication. The smart contract is written in Solidity and uses OpenZeppelin's contracts as a foundation.
 
 ## High-Level Design
@@ -18,12 +39,6 @@ The VotingSystem contract consists of the following components:
 3. Voters mapping
 4. VoteSignatures mapping
 5. ERC20 token
-6. Constructor
-7. createProposal function
-8. vote function
-9. addVoter function
-10. Proposal Struct
-11. Each proposal consists of a description and a vote count. The description is a string, while the vote count is a uint256.
 
 ### Proposals Array
 The proposals array stores all created proposals. A new proposal is added to the array using the createProposal function.
@@ -38,6 +53,14 @@ The voteSignatures mapping maps an Ethereum address to a uint256 signature. The 
 The contract uses an ERC20 token for voter authentication. The token address is passed to the constructor during deployment.
 
 ## Implementation Details
+
+1. Constructor
+2. createProposal function
+3. vote function
+4. addVoter function
+5. Proposal Struct
+6. Each proposal consists of a description and a vote count
+
 ###  Constructor
 The constructor takes the address of the ERC20 token as an argument and initializes the token variable.
 
