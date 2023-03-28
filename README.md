@@ -16,16 +16,16 @@ and run
 truffle develop
 ```
 
-&nbsp;
+
 Step 2: Setup Ganache local network and check truffle-config.js to match with your local environment.
-&nbsp;
+
 Step 3: run
 
 ```bash
 migrate --network development
 ```
 
-&nbsp;
+
 Step 4:
 
 ```bash
@@ -33,9 +33,9 @@ cd /scripts/votingSystem.js
 ```
 
 and change contractAddress to deployed contract address.
-&nbsp;
+
 Step 5: Change newVoterAddress in votingSystem.js, if necessary
-&nbsp;
+
 Step 6: run the command to see the outcome.
 
 ```bash
