@@ -40,7 +40,7 @@ and change contractAddress to deployed contract address.
 
 Step 6: Change newVoterAddress in votingSystem.js, if necessary
 
-Step 7: run the command to see the outcome.
+Step 7: run the command to see the outputs.
 
 ```bash
 node /scripts/votingSystem.js
