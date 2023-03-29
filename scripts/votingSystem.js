@@ -8,8 +8,9 @@ const web3 = new Web3('http://127.0.0.1:7545');
 const contractABI = require('../build/contracts/VotingSystem.json').abi;
 
 // Contract address: Replace this address with deployed contact address
-const contractAddress = '0x1D62258CF0bb9A6946AE6732863c908d13D8f644'; 
+const contractAddress = '0x781C772E3F9eBd0598ea1f78C0571f35f6A6F350'; 
 
+// Created instance to use with functions
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
 
 // Proposal descriptions
@@ -36,7 +37,7 @@ async function addVoter(address, signature) {
   console.log(`Voter ${address} added with signature ${signature}`);
 }
 
-// Call all function to demonstrate the usage of createProposal, vote, and addVoter functions
+// Call all functions to demonstrate the usage of createProposal, vote, and addVoter functions
 async function main() {
   // Create all proposals from proposalDescriptions
   for (const description of proposalDescriptions) {
@@ -57,7 +58,7 @@ async function main() {
   const newVoterSignature = 67890;
   await addVoter(newVoterAddress, newVoterSignature);
 
-  // Add more new voters
+  //  Add more new voters
   //  const newVoterAddressTwo = '0x14774B4d71a3A9143A628Ec4c8898c475a2aBFEe';
   //  const newVoterSignatureTwo = 54321;
   //  await addVoter(newVoterAddressTwo, newVoterSignatureTwo);
